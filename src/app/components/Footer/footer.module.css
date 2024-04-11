@@ -1,0 +1,15 @@
+.footer {
+    background-color: --grey-800;
+    height: 6rem;
+}
+.footerReservedText {
+    font-weight: 500;
+    color: var(--grey-300);
+}
+
+@media screen and (max-width: 64rem){
+    .footerReservedText {
+        max-width: 212px;
+        text-align: center;
+    }
+}

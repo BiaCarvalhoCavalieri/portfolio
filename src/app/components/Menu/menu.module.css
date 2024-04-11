@@ -1,0 +1,26 @@
+.menu {
+    column-gap: 4rem;
+    height: 6.25rem;
+    background-color: transparent;
+    align-items: flex-end;
+    z-index: 2;
+    position: relative;
+}
+.menuItem {
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+}
+.menuItemHome {
+    color:  var(--primary-color);
+    flex-direction: column;
+}
+.menuItemHome::before {
+    content: '';
+    font-size: 0;
+    height: 0.375rem;
+    width: 0.375rem;
+    background: var(--primary-color);
+    border-radius: 0.375rem;
+    margin-bottom: 0.25rem;
+}
