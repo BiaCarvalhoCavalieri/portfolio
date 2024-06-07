@@ -1,0 +1,119 @@
+.projectsWrapper {
+    background-color: var(--grey-800);
+    width: 100%;
+    position: relative;
+}
+
+.projectsWrapper::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: var(--grey-700);
+    width: 32rem;
+    height: 32rem;
+    border-bottom-left-radius: 86rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.projectsWrapper::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: var(--grey-700);
+    width: 26rem;
+    height: 36rem;
+    border-bottom-right-radius: 32rem;
+    border-top-right-radius: 32rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.projectsContainer {
+    margin: 8rem auto;
+    max-width: 81rem;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.projectsTitle {
+    font-size: 3rem;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 2.5rem;
+    position: relative;
+}
+
+.projectsTitle::after {
+    content: '';
+    width: 4rem;
+    border-bottom: 6px solid var(--primary-color);
+    position: absolute;
+    bottom: -0.625rem;
+    right: calc(50% - 2rem);
+}
+
+.projectsCardsContainer {
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.projectsCard {
+    max-width: 25.75rem;
+    background-color: var(--grey-700);
+    border-radius: 0.625rem;
+}
+
+.projectsCardImage {
+    max-width: 100%;
+    width: 24rem;
+    height: 12.5rem;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+}
+
+.projectsCardInformations {
+    padding: 1.5rem;
+}
+
+.projectsCardButtons {
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+.projectsCardButtonLive {
+    background-color: var(--primary-color);
+    height: 2.625rem;
+    border-radius: 0.625rem;
+    width: calc(50% - 1.5rem);
+    color: var(--grey-800);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.projectsCardButtonLive:hover {
+    opacity: 0.7;
+}
+
+.projectsCardButtonCode {
+    column-gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.projectsCardType {
+    margin-top: 0.5rem;
+}
+
+.projectsCardTypeTitle {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--grey-100);
+    padding-right: 0.375rem;
+}

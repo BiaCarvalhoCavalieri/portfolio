@@ -1,0 +1,46 @@
+.skillsWrapper {
+    background-color: var(--grey-900);
+    width: 100%;
+}
+
+.skillsContainer {
+    margin: 5rem auto;
+    max-width: 81rem;
+    width: 100%;
+}
+
+.skillsTitle {
+    font-size: 3rem;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 2.5rem;
+    position: relative;
+}
+
+.skillsTitle::after {
+    content: '';
+    width: 4rem;
+    border-bottom: 6px solid var(--primary-color);
+    position: absolute;
+    bottom: -0.625rem;
+    right: calc(50% - 2rem);
+}
+
+.skillsItem {
+    column-gap: 1rem;
+}
+
+.skillsItems {
+    margin-top: 4rem;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem
+}
+
+.skillsItemText {
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: var(--grey-200);
+}
