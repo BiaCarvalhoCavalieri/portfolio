@@ -1,0 +1,56 @@
+.contactWrapper {
+    width: 100%;
+    background-color: var(--grey-800);
+}
+
+.contactCard {
+    background-color: var(--grey-900);
+    border-radius: 2rem;
+    height: 38rem;
+    margin: 5rem auto;
+    max-width: 50rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 2rem 4rem;
+    row-gap: 1.5rem
+}
+
+.contactCardTitle {
+    font-size: 2rem;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 2.5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    justify-content: space-between;
+}
+
+.contactCardTitle::after {
+    content: '';
+    border-bottom: 4px solid #FFF;
+    flex: 1;
+    max-width: 60%;
+}
+
+.contactCardItem {
+    display: flex;
+    column-gap: 1.5rem;
+    align-items: center;
+}
+
+.contactCardItemText {
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.contactCardLineBottom {
+    border-bottom: 4px solid #FFF;
+    width: 40%;
+    margin-top: 4rem;
+}

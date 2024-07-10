@@ -73,7 +73,8 @@
     transition: opacity 0.3s ease-in-out;
 }
 
-.bannerInfosButton:hover {
+.bannerInfosButton:hover,
+.bannerInfosLinkItem:hover {
     opacity: 0.7;
 }
 
@@ -86,4 +87,5 @@
     background-color: var(--grey-600);
     width: 4rem;
     height: 4rem;
+    transition: opacity 0.3s ease-in-out;
 }

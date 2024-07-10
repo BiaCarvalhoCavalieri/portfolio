@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
 :root {
@@ -9,7 +8,7 @@
 
   --primary-color: #43B9B5;
 
-  --grey-100: #E2E2E2; 
+  --grey-100: #E2E2E2;
   --grey-200: #C1C1C1;
   --grey-300: #8F8F8F;
   --grey-400: #3E3D3D;
@@ -35,6 +34,7 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   font-family: var(--font-poppins);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -95,4 +95,22 @@ a {
   .container {
     padding: 0 1 rem;
   }
-} 
+}
+
+.swiper.swiper-coverflow {
+  height: 27.5rem;
+}
+
+.swiper-wrapper {
+  max-height: 23.75rem;
+}
+
+.swiper-pagination-bullet {
+  width: 0.75rem !important;
+  height: 0.75rem !important;
+  background: var(--grey-200) !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #43b9b5 !important;
+}

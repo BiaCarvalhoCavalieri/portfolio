@@ -3,24 +3,28 @@
     width: 100%;
     position: relative;
 }
+
 .aboutMeWrapper::before {
-    content: url('../../../assets/bg_about-me.png');
+    content: url('../../../assets/images/bg_about-me.png');
     position: absolute;
     right: 0;
     top: 2.5rem;
 }
+
 .aboutMeWrapper::after {
-    content: url('../../../assets/bg_dots.png');
+    content: url('../../../assets/images/bg_dots.png');
     position: absolute;
     bottom: 0;
     max-height: 9rem;
     overflow: hidden;
 }
+
 .aboutMeContainer {
     margin: 8rem auto 6rem;
     max-width: 59rem;
     width: 100%;
 }
+
 .aboutMeTitle {
     font-size: 3rem;
     text-transform: uppercase;
@@ -29,6 +33,7 @@
     margin: 0 0 2.5rem;
     position: relative;
 }
+
 .aboutMeTitle::after {
     content: '';
     width: 4rem;
@@ -37,6 +42,7 @@
     bottom: -0.625rem;
     right: calc(50% - 2rem);
 }
+
 .aboutMeText {
     color: var(--grey-300);
     font-size: 1.75rem;
@@ -44,6 +50,7 @@
     text-align: center;
     font-weight: 500;
 }
+
 .aboutMeText b {
     color: var(--primary-color);
 }
