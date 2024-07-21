@@ -4,21 +4,6 @@
     position: relative;
 }
 
-.aboutMeWrapper::before {
-    content: url('../../../assets/images/bg_about-me.png');
-    position: absolute;
-    right: 0;
-    top: 2.5rem;
-}
-
-.aboutMeWrapper::after {
-    content: url('../../../assets/images/bg_dots.png');
-    position: absolute;
-    bottom: 0;
-    max-height: 9rem;
-    overflow: hidden;
-}
-
 .aboutMeContainer {
     margin: 8rem auto 6rem;
     max-width: 59rem;
@@ -53,4 +38,41 @@
 
 .aboutMeText b {
     color: var(--primary-color);
+}
+
+@media screen and (max-width: 64rem) {
+
+    .aboutMeContainer {
+        margin: 4rem auto 3rem;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .aboutMeTitle {
+        font-size: 1.5rem;
+        margin: 0 0 1.25rem;
+    }
+
+    .aboutMeText {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 64rem) {
+
+    .aboutMeWrapper::before {
+        content: url('../../../assets/images/bg_about-me.png');
+        position: absolute;
+        right: 0;
+        top: 2.5rem;
+    }
+
+    .aboutMeWrapper::after {
+        content: url('../../../assets/images/bg_dots.png');
+        position: absolute;
+        bottom: 0;
+        max-height: 9rem;
+        overflow: hidden;
+    }
 }

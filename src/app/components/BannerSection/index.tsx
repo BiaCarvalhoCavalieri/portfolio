@@ -1,4 +1,7 @@
+"use client"
+import { useEffect, useState } from "react"
 import BannerImage from "../../../assets/images/banner-image.png"
+import BannerMobileImage from "../../../assets/images/banner-image-mobile.png"
 import ArrowDown from "../../../assets/icons/circle_down.svg"
 import LinkedinIcon from "../../../assets/icons/linkedin.svg"
 import GithubIcon from "../../../assets/icons/github.svg"
@@ -7,6 +10,16 @@ import Image from "next/image";
 import styles from "./bannerSection.module.css";
 
 export default function BannerSection() {
+    const [isDesktop, setIsDesktop] = useState(false);
+
+    const updateMedia = () => {
+        setIsDesktop(window.innerWidth > 1024);
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', updateMedia);
+        return () => window.removeEventListener('resize', updateMedia);
+    }, [])
 
     return (
         <section className={`${styles.banner} d-flex w-100 container`}>
@@ -46,7 +59,7 @@ export default function BannerSection() {
                 </div>
             </div>
             <Image
-                src={BannerImage}
+                src={isDesktop ? BannerImage : BannerMobileImage}
                 alt={"Banner com Imagem da Programadora Beatriz Carvalho"}
                 className={styles.bannerImage}
             />
