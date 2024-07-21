@@ -3,6 +3,7 @@ import BannerSection from "./components/BannerSection/index";
 import AboutMeSection from "./components/AboutMeSection";
 import ProjectsSection from "./components/ProjectsSection";
 import SkillsSection from "./components/SkillsSection";
+import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer/index";
 import styles from "./page.module.css";
 
@@ -17,6 +18,7 @@ export default function Home() {
         <AboutMeSection />
         <ProjectsSection />
         <SkillsSection />
+        <ContactSection />
       </main>
       <Footer />
     </>

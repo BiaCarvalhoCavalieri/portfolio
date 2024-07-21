@@ -12,17 +12,6 @@
     max-width: 38rem;
 }
 
-.bannerImage {
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    left: 0;
-    width: 100%;
-    max-height: 56.25rem;
-    object-fit: cover;
-    object-position: top;
-}
-
 .bannerInfosTitle {
     text-transform: uppercase;
     width: 100%;
@@ -73,7 +62,8 @@
     transition: opacity 0.3s ease-in-out;
 }
 
-.bannerInfosButton:hover {
+.bannerInfosButton:hover,
+.bannerInfosLinkItem:hover {
     opacity: 0.7;
 }
 
@@ -86,4 +76,62 @@
     background-color: var(--grey-600);
     width: 4rem;
     height: 4rem;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.bannerImage {
+    object-fit: cover;
+    object-position: top;
+}
+
+.bannerImage {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    max-height: 56.25rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .banner {
+        height: inherit;
+        background-color: #1f1f1f;
+        padding-bottom: 4rem;
+    }
+
+    .bannerInfos {
+        margin-top: 10rem;
+    }
+
+    .bannerInfosTitle {
+        font-size: 2rem;
+        max-width: 19.5rem;
+    }
+
+    .bannerInfosSubtitle {
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 2rem 7rem 2rem 0.5rem;
+    }
+
+    .bannerInfosTitle::after {
+        width: 11rem;
+        right: unset;
+        bottom: -1rem;
+        left: 3rem;
+    }
+
+    .bannerInfosPhrase {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        margin-right: 4rem;
+        width: 87%;
+        max-width: 23.375rem;
+    }
+
+    .bannerInfosButton {
+        margin-bottom: 2rem;
+    }
+
 }
