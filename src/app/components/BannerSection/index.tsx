@@ -17,6 +17,7 @@ export default function BannerSection() {
     }
 
     useEffect(() => {
+        setIsDesktop(window.innerWidth > 1024);
         window.addEventListener('resize', updateMedia);
         return () => window.removeEventListener('resize', updateMedia);
     }, [])
