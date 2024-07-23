@@ -38,7 +38,7 @@ const projectInformations: IProjectInformations[] = [
     {
         image: checkoutSimulation,
         name: 'Checkout Example Simulation',
-        link: 'https://checkout-example-simulation-nuyb8j4k1-biacarvalhocavalieri.vercel.app/',
+        link: 'https://checkout-example-simulation.vercel.app/',
         codeLink: 'https://github.com/BiaCarvalhoCavalieri/checkout-example-simulation',
         mobile: false,
         desktop: true,
@@ -62,7 +62,7 @@ const projectInformations: IProjectInformations[] = [
     {
         image: checkoutSimulation,
         name: 'Checkout Example Simulation',
-        link: 'https://checkout-example-simulation-nuyb8j4k1-biacarvalhocavalieri.vercel.app/',
+        link: 'https://checkout-example-simulation.vercel.app/',
         codeLink: 'https://github.com/BiaCarvalhoCavalieri/checkout-example-simulation',
         mobile: false,
         desktop: true,
