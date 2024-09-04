@@ -8,6 +8,7 @@ import { EffectCoverflow, Pagination } from "swiper/modules"
 import boaVistaImage from "../../../assets/images/project-boa-vista-2.png"
 import checkoutSimulation from "../../../assets/images/checkout-simulation.png"
 import productPage from "../../../assets/images/product-page.png"
+import focusTimer from "../../../assets/images/focus-timer.png"
 import arrowRight from "../../../assets/icons/arrow-right.svg"
 import mobileDevice from "../../../assets/icons/mobile-device.svg"
 import desktopDevice from "../../../assets/icons/desktop-device.svg"
@@ -52,26 +53,10 @@ const projectInformations: IProjectInformations[] = [
         desktop: true,
     },
     {
-        image: boaVistaImage,
-        name: 'Landing Page - Boa Vista Investimento',
-        link: 'https://boavistainvestimentos.com.br/',
-        codeLink: '',
-        mobile: true,
-        desktop: true,
-    },
-    {
-        image: checkoutSimulation,
-        name: 'Checkout Example Simulation',
-        link: 'https://checkout-example-simulation.vercel.app/',
-        codeLink: 'https://github.com/BiaCarvalhoCavalieri/checkout-example-simulation',
-        mobile: false,
-        desktop: true,
-    },
-    {
-        image: productPage,
-        name: 'Product Page Nike Overview',
-        link: 'https://biacarvalhocavalieri.github.io/ProjectNike2022/',
-        codeLink: 'https://github.com/BiaCarvalhoCavalieri/ProjectNike2022',
+        image: focusTimer,
+        name: 'Focus Timer',
+        link: 'https://bia-carvalho-timer-project.vercel.app/',
+        codeLink: 'https://github.com/BiaCarvalhoCavalieri/timer-project',
         mobile: true,
         desktop: true,
     }
